@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #747474;
+    background: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  ======================== btns ======================== */
+
+.btns {
+    margin: 20px auto 0;
+    width: 500px;
+    text-align: center;
+}
+
+.btns button {
+    height: 30px;
+    width: 70px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* ========================== index 1 ====================== */
+.container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 1fr;
+    margin: 300px auto;
+    width: 800px;
+    border-radius: 10px;
+    align-content: center;
+    box-shadow: inset -10px -10px 5px rgba(0, 0, 0, 0.329),
+        10px 10px 5px rgba(0, 0, 0, 0.329);
+}
+
+.ico_container {
+    display: flex;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-right: 5px solid black;
+    font-size: 100px;
+    padding: 5px 0;
+    color: rgb(54, 54, 54);
+}
+
+.q_cont {
+    align-self: center;
+    background-color: rgb(228, 228, 228);
+    padding: 0 30px;
+    border-radius: 5px;
+    border-left: 5px solid rgb(0, 0, 0);
+}
+
+.quoit {
+    text-align: justify;
+    align-self: center;
+    padding-top: 20px;
+}
+
+.author {
+    border-top: 1px dashed black;
+    width: 200px;
+    margin: 10px auto;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* =========================== Square ========================= */
+
+.square {
+    position: relative;
+    margin: 300px auto;
+    width: 700px;
+    /* background-color: brown; */
+    border-radius: 5px;
+
+}
+
+.left_top {
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-radius: 5px;
+}
+
+.left_top::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    bottom: 0px;
+    right: 50px;
+    border: 5px solid #747474;
+}
+
+.right_bottom {
+    border-right: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.right_bottom::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: -5px;
+    left: 49px;
+    border: 5px solid #747474;
+}
+
+.left_q {
+    position: absolute;
+    left: 80px;
+    top: -30px;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.right_q {
+    position: absolute;
+    right: 80px;
+    bottom: -30px;
+    font-size: 50px;
+}
+
+.talks {
+    padding: 50px;
+    text-align: justify;
+}
+
+.the_auther {
+    text-align: center;
+    border-top: 1px dashed;
+    width: 200px;
+    margin: 20px auto -30px auto;
+    padding-top: 10px;
+}
+
+
+/* =============================================== Sheet ================== */
+
+.sheet {
+    width: 700px;
+    margin: 200px auto;
+    background-color: cadetblue;
+    border-radius: 20px;
+    height: 400px;
+    padding: 100px;
+    transform: rotate(-10deg);
+    box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.651),
+        0px 10px 30px rgba(0, 0, 0, 0.534);
+}
+
+.sheet_border {
+    transform: rotate(10deg);
+    /* background-color: blueviolet; */
+    position: relative;
+    text-align: justify;
+}
+
+.left_i {
+    position: absolute;
+    top: -30px;
+    left: 60px;
+    font-size: 50px;
+    transform: rotate(10deg);
+}
+
+.right_i {
+    position: absolute;
+    bottom: -30px;
+    right: 50px;
+    font-size: 50px;
+    transform: rotate(10deg);
+}
+
+.writings {
+    padding-top: 40px;
+}
+
+.the_auth {
+    border-top: 1px dashed black;
+    width: 150px;
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 10px;
+}
